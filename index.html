@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel BOM Comparator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header with title -->
+    <header>
+        <h1>Excel BOM Comparator</h1>
+    </header>
+
+    <!-- Main content wrapper -->
+    <main>
+        <!-- Form for file upload -->
+        <form id="uploadForm">
+            <label for="customerBOM">Upload Customer BOM:</label>
+            <input type="file" id="customerBOM" accept=".xlsx, .xls"><br><br>
+
+            <label for="cqReadyBOM">Upload CQ Ready BOM:</label>
+            <input type="file" id="cqReadyBOM" accept=".xlsx, .xls"><br><br>
+
+            <button type="button" id="compareButton">Compare Files</button>
+        </form>
+
+        <!-- Output section -->
+        <div id="output"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Excel BOM Comparator</p>
+    </footer>
+
+    <!-- Include the XLSX.js library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.full.min.js"></script>
+    <!-- Custom script -->
+    <script src="script/script.js"></script>
+</body>
+</html>
